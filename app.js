@@ -15,28 +15,28 @@ app.use(express.static("public"));
 app.get("/", (req, res) => {
 	res.render("home", {
 		nombre: "JSamuel",
-		titulo: "Curdo de Node.js",
+		titulo: "Curso de Node.js",
 	});
 });
 
 app.get("/elements", (req, res) => {
 	res.render("elements", {
 		nombre: "JSamuel",
-		titulo: "Curdo de Node.js",
+		titulo: "Curso de Node.js",
 	});
 });
 
 app.get("/generic", (req, res) => {
 	res.render("generic", {
 		nombre: "JSamuel",
-		titulo: "Curdo de Node.js",
+		titulo: "Curso de Node.js",
 	});
 });
 
 app.get("*", (req, res) => {
 	res.render("404", {
 		nombre: "JSamuel",
-		titulo: "Curdo de Node.js",
+		titulo: "Curso de Node.js",
 	});
 });
 
